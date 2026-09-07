@@ -489,6 +489,45 @@ button:focus-visible {
   opacity: 0.82;
 }
 
+/* Certification group headings */
+
+.cert-group-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: var(--space-5) 0 var(--space-3);
+  font-size: 17px;
+  letter-spacing: 0.01em;
+}
+
+.cert-group-heading--first {
+  margin-top: 0;
+}
+
+.cert-group-heading::after {
+  content: "";
+  flex: 1 1 auto;
+  height: 1px;
+  background: var(--hairline);
+}
+
+.cert-group-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cert-group-icon svg {
+  width: 17px;
+  height: 17px;
+}
+
 /* Certification badges */
 
 .badge-grid {
@@ -496,8 +535,9 @@ button:focus-visible {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: var(--space-2);
+  justify-content: start;
 }
 
 .badge {
@@ -507,6 +547,7 @@ button:focus-visible {
   background: var(--surface);
   border-radius: var(--radius-md);
   padding: 14px 16px;
+  min-height: 102px;
   font-size: 14.5px;
   color: var(--text);
   box-shadow: var(--shadow-card);
