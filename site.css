@@ -59,6 +59,7 @@ h3 {
   font-weight: 600;
   line-height: 1.35;
   margin: 0;
+  text-wrap: balance;
 }
 
 p {
@@ -353,6 +354,192 @@ button:focus-visible {
   overflow: hidden;
   box-shadow: var(--shadow-card);
   margin-bottom: var(--space-4);
+}
+
+/* Portfolio page — section blocks */
+
+.section-block {
+  margin-bottom: var(--space-6);
+}
+
+.section-intro {
+  color: var(--text);
+  opacity: 0.85;
+  font-size: 15.5px;
+  text-align: center;
+  max-width: 56ch;
+  margin: 0 auto var(--space-3);
+}
+
+.subsection-heading {
+  font-size: 18px;
+  margin: var(--space-5) 0 var(--space-3);
+  text-align: center;
+}
+
+/* Mission card */
+
+.mission-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5) var(--space-4);
+  box-shadow: var(--shadow-card);
+}
+
+.mission-card p {
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.mission-card p + p {
+  margin-top: var(--space-3);
+}
+
+/* Career highlight list */
+
+.intro-list {
+  list-style: none;
+  margin: var(--space-3) auto 0;
+  padding: 0;
+  max-width: 56ch;
+  display: grid;
+  gap: 10px;
+}
+
+.intro-list li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--text);
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+.intro-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* Timeline */
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--hairline);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 32px;
+  padding-bottom: var(--space-4);
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 3px solid var(--accent);
+}
+
+.timeline-role {
+  font-weight: 600;
+  font-size: 16.5px;
+  color: var(--text);
+  display: block;
+}
+
+.timeline-company {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.timeline-date {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin: 3px 0 8px;
+}
+
+.timeline-desc {
+  font-size: 15px;
+  color: var(--text);
+  opacity: 0.82;
+}
+
+/* Certification badges */
+
+.badge-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-2);
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  font-size: 14.5px;
+  color: var(--text);
+  box-shadow: var(--shadow-card);
+}
+
+.badge svg {
+  color: var(--accent);
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+}
+
+.education-note {
+  margin-top: var(--space-4);
+  font-size: 14.5px;
+  color: var(--text-muted);
+  text-align: center;
+  max-width: 56ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Outline button variant */
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--btn-primary-bg);
+  color: var(--btn-primary-bg);
+}
+
+.btn-outline:hover {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
 }
 
 @media (max-width: 480px) {
