@@ -22,8 +22,8 @@
   --space-5: 48px;
   --space-6: 64px;
   --space-7: 96px;
-  --font-display: "Taviraj", "Noto Sans Thai", serif;
-  --font-body: "Noto Sans Thai", "Taviraj", sans-serif;
+  --font-display: "IBM Plex Sans Thai", "Noto Sans Thai", serif;
+  --font-body: "Noto Sans Thai", "IBM Plex Sans Thai", sans-serif;
 }
 
 *,
