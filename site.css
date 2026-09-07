@@ -129,9 +129,23 @@ button:focus-visible {
 
 .welcome-text {
   color: var(--text-muted);
-  font-size: 17px;
-  max-width: 52ch;
+  font-size: 14.5px;
+  font-style: italic;
+  line-height: 1.75;
+  max-width: 48ch;
   margin: 0 auto;
+}
+
+.welcome-text::before {
+  content: "\201C";
+  font-style: normal;
+  color: var(--accent);
+}
+
+.welcome-text::after {
+  content: "\201D";
+  font-style: normal;
+  color: var(--accent);
 }
 
 .hero-signature {
